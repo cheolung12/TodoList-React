@@ -1,0 +1,31 @@
+.form {
+    width: 100%;
+    display: flex;
+    padding: 1.4rem 1rem;   /* 상하 1.4, 좌우 1 */
+    background-color: var(--color-bg-dark);
+}
+
+.input {
+    flex: 1 0 auto;
+    font-size: 1.4rem;
+    padding: 0.7rem, 1rem;
+    border: none;
+    outline: none;
+    border-top-left-radius: 8px; /* 이렇게 특정부분만 둥그렇게 할 수 있다 */
+    border-bottom-left-radius: 8px;
+}
+
+.button {
+    cursor: pointer;  /* 마우스 올리면 손가락 모양으로 바뀜 */
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 0 2rem;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.button:hover {
+    filter: brightness(125%); /* 마우스 올라갔을 때 빛남 */
+}

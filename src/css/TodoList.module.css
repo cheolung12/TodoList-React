@@ -1,0 +1,14 @@
+.container {
+    height: 100%;
+    display: flex;
+    min-height: 0; /* 화면이 내려갈 때 header부분이 가려지는 것을 방지해줌 */
+    flex-direction: column;
+    background-color: var(--color-bg);
+}
+
+.list {
+    /* add 부분 제일 밑으로 내리기 */
+    flex: 1 1 auto;
+    /* 목록이 많을경우 자동으로 스크롤 생기게 */
+    overflow-y: auto;
+}
